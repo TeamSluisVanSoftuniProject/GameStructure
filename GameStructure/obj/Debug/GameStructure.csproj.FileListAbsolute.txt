@@ -1,0 +1,5 @@
+c:\users\deny\documents\visual studio 2015\Projects\GameStructure\GameStructure\bin\Debug\GameStructure.exe.config
+c:\users\deny\documents\visual studio 2015\Projects\GameStructure\GameStructure\bin\Debug\GameStructure.exe
+c:\users\deny\documents\visual studio 2015\Projects\GameStructure\GameStructure\bin\Debug\GameStructure.pdb
+c:\users\deny\documents\visual studio 2015\Projects\GameStructure\GameStructure\obj\Debug\GameStructure.exe
+c:\users\deny\documents\visual studio 2015\Projects\GameStructure\GameStructure\obj\Debug\GameStructure.pdb
