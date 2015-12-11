@@ -1,7 +1,15 @@
-﻿namespace GameStructure.Models.HealthItems
+﻿using GameStructure;
+using GameStructure.Models;
+
+public abstract class HealthItem : Item
 {
-    public class HealthItem
+    protected HealthItem(string name, ItemType itemType, int healing)
+        : base(name, itemType)
     {
-         
+        this.Healing = healing;
     }
+
+    public int Healing { get; set; }
+
+    public abstract int Heal { get; }
 }

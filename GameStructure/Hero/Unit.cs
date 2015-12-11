@@ -1,8 +1,9 @@
 ﻿using System;
+using GameStructure.Interfaces;
 
 namespace GameStructure.Hero
 {
-    public abstract class Unit
+    public abstract class Unit : IAttack, IUnit
     {
         private string name;
         private int health;

@@ -1,4 +1,6 @@
-﻿namespace GameStructure.Hero
+﻿using GameStructure.Models;
+
+namespace GameStructure.Hero
 {
     public abstract class Hero : Unit
     {
@@ -6,11 +8,22 @@
         private int kills;
         private int gold;
         private Inventory inventory;
-        // Implement Invtory class / interface.
 
         protected Hero(string name, int health, int attackDamage) 
             :base(name, health, attackDamage)
         {
+            this.inventory = new Inventory();
+            this.Level = 1;
         }
+
+        public int Experience { get; set; }
+
+        public int Gold { get; set; }
+
+        public int Kills { get; set; }
+
+        public Inventory Inventory { get; set; }
+
+        public int Level { get; set; }
     }
 }

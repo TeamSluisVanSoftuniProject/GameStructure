@@ -1,6 +1,8 @@
-﻿namespace GameStructure.Models.HealthItems
+﻿using GameStructure.Interfaces;
+
+namespace GameStructure.Models.HealthItems
 {
-    public class Potion : HealthItem
+    public class Potion : HealthItem, IHeal
     {
         private const int potionHealing = 20;
 
@@ -10,5 +12,6 @@
         }
 
         public override int Heal { get; }
+        public int Health { get; set; }
     }
 }
