@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using GameStructure.Creatures;
 using GameStructure.Enums;
 using GameStructure.Hero;
 using GameStructure.Models;
@@ -9,10 +11,17 @@ namespace GameStructure
     {
         static void Main()
         {
-            var asd = ItemFactory.CreateItem(AllItems.Daggers);
-            ItemFactory.CreateItem(AllItems.Potion);
+            Wizard asd = new Wizard("Deni");
+            var worgen = CreatureFactory.CreateCreature(EnemyType.Worgen);
 
-            Console.WriteLine(asd.Name);
+            if (asd.AttackDamage > worgen.Health)
+            {
+                asd.Health -= worgen.AttackDamage;
+                asd.Exp
+                Console.WriteLine("Worgen is defeated!");
+                Thread.Sleep(2000);
+                Console.WriteLine("Remaining health : {0}", asd.Health);
+            }
 
         }
     }

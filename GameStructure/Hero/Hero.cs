@@ -1,4 +1,5 @@
-﻿using GameStructure.Models;
+﻿using System;
+using GameStructure.Models;
 
 namespace GameStructure.Hero
 {
@@ -25,5 +26,18 @@ namespace GameStructure.Hero
         public Inventory Inventory { get; set; }
 
         public int Level { get; set; }
+
+        public override int GetAttackDemage()
+        {
+            int damage = this.AttackDamage;
+
+            if (damage <= 0)
+            {
+                damage = 10;
+            }
+
+            return damage;
+        }
     }
+
 }

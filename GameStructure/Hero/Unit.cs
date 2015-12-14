@@ -54,5 +54,7 @@ namespace GameStructure.Hero
                 this.name = value;
             }
         }
+
+        public abstract int GetAttackDemage();
     }
 }

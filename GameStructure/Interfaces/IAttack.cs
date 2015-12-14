@@ -1,6 +1,6 @@
 ﻿namespace GameStructure.Interfaces
 {
-    public class IAttack
+    public interface IAttack
     {
          
     }

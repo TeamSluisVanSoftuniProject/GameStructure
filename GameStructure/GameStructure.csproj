@@ -51,7 +51,10 @@
     <Compile Include="Battle.Designer.cs">
       <DependentUpon>Battle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Creatures\Creature.cs" />
+    <Compile Include="Creatures\CreatureFactory.cs" />
     <Compile Include="Enums\AllItems.cs" />
+    <Compile Include="Enums\EnemyType.cs" />
     <Compile Include="Hero\Hero.cs" />
     <Compile Include="Hero\Unit.cs" />
     <Compile Include="Hero\Wizard.cs" />
